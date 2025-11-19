@@ -24,9 +24,9 @@ body {
 .page-frame {
   position: relative;
   width: 1280px;
-  height: 700px; /* Figma frame height */
+  height: 700px;
   background: #080808;
-  overflow: hidden; /* match Figma frame clipping */
+  overflow: hidden;
 }
 
 /* -------- NAVBAR -------- */
@@ -104,19 +104,6 @@ body {
   width: 100%;
   height: 100%;
   color: #ffffff;
-}
-
-/* LEFT COLUMN (538 x 247 in Figma) */
-.hero-left {
-  position: absolute;
-  top: 180px;
-  left: 180px;
-  width: 538px;
-}
-
-/* text block (492 wide in Figma) */
-.hero-text-block {
-  width: 492px;
 }
 
 .hero-name {
