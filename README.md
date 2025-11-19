@@ -3,11 +3,11 @@
 This project is a pixel-aligned implementation of the **Personal Portfolio Template** Figma design, rebranded with my own content and built with semantic HTML and custom CSS.
 
 Figma template:  
-“🎨 Personal Portfolio Template – Community”
+“Personal Portfolio Template – Community”
 
 ---
 
-## ✨ Overview
+## Overview
 
 The goal of this project was to:
 
@@ -20,7 +20,7 @@ The current implementation focuses on the **landing / hero section** of the desi
 
 ---
 
-## 🧩 Features
+## Features
 
 - **Top navigation bar**
 
@@ -48,7 +48,7 @@ The current implementation focuses on the **landing / hero section** of the desi
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **HTML5**
 - **CSS3**
@@ -56,7 +56,7 @@ The current implementation focuses on the **landing / hero section** of the desi
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 .
