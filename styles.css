@@ -1,0 +1,250 @@
+/* -------- RESET -------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* -------- PAGE BACKGROUND -------- */
+body {
+  background: #080808;
+  font-family: "IBM Plex Mono", monospace;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.page-frame {
+  position: relative;
+  width: 1280px;
+  height: 700px; /* Figma frame height */
+  background: #080808;
+  overflow: hidden; /* match Figma frame clipping */
+}
+
+/* -------- NAVBAR -------- */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 85px;
+  width: 1110px;
+  height: 70px;
+  background: #1b1b1b;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.nav-inner {
+  width: 920px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* left side links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 70px;
+}
+
+.nav-links a {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: #9c9c9c;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* right side icons */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-icon img {
+  width: 22px;
+  height: 22px;
+  display: block;
+  filter: invert(70%) brightness(1.1);
+  opacity: 0.9;
+}
+
+.nav-links a:hover,
+.nav-icon img:hover {
+  opacity: 1;
+}
+
+/* -------- HERO LAYOUT -------- */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+}
+
+/* LEFT COLUMN (538 x 247 in Figma) */
+.hero-left {
+  position: absolute;
+  top: 180px;
+  left: 180px;
+  width: 538px;
+}
+
+/* text block (492 wide in Figma) */
+.hero-text-block {
+  width: 492px;
+}
+
+.hero-name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 1;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.hero-intro {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #9c9c9c;
+  margin-bottom: 32px;
+}
+
+/* CTA button */
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  background: #3f8e00;
+  padding: 21px 64px;
+  border-radius: 4px;
+  border: 1px solid #62ba1b;
+  box-shadow: 0px 8px 30px rgba(63, 142, 0, 0.5);
+}
+
+.cta-arrow {
+  width: 14px;
+  height: 14px;
+}
+
+/* -------- WORKED WITH -------- */
+.workedwith-wrapper {
+  margin-top: 127px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  color: #9c9c9c;
+}
+
+.workedwith-label {
+  width: 93px;
+  height: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-bar {
+  width: 920px;
+  height: 60px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #9c9c9c;
+  border-radius: 8px;
+  border: 1px solid #202020;
+  background: #080808;
+}
+
+/* -------- HERO IMAGE POSITION -------- */
+.hero-right {
+  position: absolute;
+  top: 150px;
+  left: 750px;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -------- HERO TEXT BLOCK POSITION -------- */
+.hero-left {
+  position: absolute;
+  top: 201px;
+  left: 180px;
+  width: 538px;
+}
+
+.hero-text-block {
+  width: 492px;
+}
+
+.headshot-circle {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.85);
+}
+
+.headshot-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 18%;
+}
+
+a:focus {
+  outline: 2px dashed rgba(255, 255, 255, 0.25);
+  outline-offset: 2px;
+}
+
+/* Slight scale down when viewing on smaller screens */
+@media (max-width: 1400px) {
+  .page-frame {
+    transform: scale(0.95);
+    transform-origin: top center;
+  }
+}
